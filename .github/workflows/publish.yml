@@ -22,7 +22,7 @@ jobs:
               run: yarn install --frozen-lockfile
 
             - name: Install protoc
-              run: sudo apt-get && sudo apt-get install -y protobuf-compiler
+              run: sudo apt-get update && sudo apt-get install -y protobuf-compiler
 
             - name: Generate TS Protobuf
               run: yarn run generate
