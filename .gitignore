@@ -6,3 +6,4 @@ pnpm-lock.yml
 .DS_Store
 .vscode/
 .log
+yarn.lock.yaml
