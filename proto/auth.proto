@@ -61,7 +61,7 @@ message TelegramVerifyResponse {
 }
 
 message TelegramCompleteRequest {
-    string message_id = 1;
+    string session_id = 1;
     string phone = 2;
 }
 
