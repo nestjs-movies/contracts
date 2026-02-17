@@ -6,6 +6,8 @@ service UsersService {
     rpc GetMe (GetMeRequest) returns (GetMeResponse);
 
     rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
+
+    rpc PatchUser (PatchUserRequest) returns (PatchUserResponse);
 }
 
 message GetMeRequest {
@@ -30,4 +32,13 @@ message User {
     optional string phone = 3;
     optional string email = 4;
     optional string avatar = 5;
+}
+
+message PatchUserRequest {
+    string user_id = 1;
+    optional string name = 2;
+}
+
+message PatchUserResponse {
+    bool ok = 1;
 }
